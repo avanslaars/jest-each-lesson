@@ -7,13 +7,13 @@ describe('isPalindrome', () => {
     expect(result).toBe(true)
   })
 
-  test('Typewriter is not a palindrome', () => {
+  test('isPalindrome("Typewriter") - false', () => {
     const input = 'Typewriter'
     const result = isPalindrome(input)
     expect(result).toBe(false)
   })
 
-  test('rotor is a palindrome', () => {
+  test('isPalindrome("rotor") - true', () => {
     const input = 'rotor'
     const result = isPalindrome(input)
     expect(result).toBe(true)
