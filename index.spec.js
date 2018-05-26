@@ -19,3 +19,28 @@ describe('isPalindrome', () => {
     expect(result).toBe(true)
   })
 })
+
+describe('isPalindrome - each', () => {
+  test.each([
+    ['Racecar', true],
+    ['Typewriter', false],
+    ['rotor', true],
+    ['kayak', true],
+    ['Step on no pets', true]
+  ])('isPalindrome("%s") - %s', (input, expected) => {
+    const result = isPalindrome(input)
+    expect(result).toBe(expected)
+  })
+})
+
+describe('isPalindrome - each template literal', () => {
+  test.each`
+  input           | expected
+  ${'Racecar'}    | ${true}
+  ${'Typewriter'} | ${false}
+  ${'rotor'}      | ${true}
+  `('isPalindrome("$input") - $expected', ({ input, expected }) => {
+    const result = isPalindrome(input)
+    expect(result).toBe(expected)
+  })
+})
