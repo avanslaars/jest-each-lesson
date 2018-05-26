@@ -5,6 +5,10 @@
   "main": "index.js",
   "author": "Andy Van Slaars",
   "license": "MIT",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
   "devDependencies": {
     "jest": "^23.0.0"
   }
