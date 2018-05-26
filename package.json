@@ -1,0 +1,11 @@
+{
+  "name": "jest-each-lesson",
+  "version": "1.0.0",
+  "description": "Source for egghead.io lesson on Jest's test.each method",
+  "main": "index.js",
+  "author": "Andy Van Slaars",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^23.0.0"
+  }
+}
